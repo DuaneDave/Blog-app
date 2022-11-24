@@ -44,6 +44,8 @@ gem 'bootsnap', require: false
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+gem 'ffi', '~> 1.15.0'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -64,6 +66,7 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'rspec-rails', '>= 3.9.0'
 end
 
 group :test do

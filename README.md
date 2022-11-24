@@ -1,33 +1,88 @@
 # Blog App
+
+Blog App
+
+# Description the project.
+
 Blog app is a website that allows users to create, edit, comment and delete posts, keeping data in a database. This project implements both authorization and authentication in order to provide extended functionality to logged in and authorized users.
 
 ## Built With
 
-- Languages: Ruby Postgres
-- Technologies Used: Rubocop, VSCode
-- Frameworks: Ruby on Rails
+- Languages:
+  _**Ruby**_
+  _**Postgresql**_
+- Frameworks: _**Ruby On Rails**_
+- Technologies used: _**Visual Studio Code**_
 
-## Live Demo
+### Requirements
 
-[Coming soon]()
+In order to work on this project, you need to have the following dependencies installed:
+
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Postgresql](https://www.postgresql.org/)
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
+- [Rails](https://rubyonrails.org/)
 
 ## Getting Started
 
-- Clone this repo <https://github.com/DuaneDave/Blog-app.git>
+### Clone this repository
 
-  ```bash
-  git clone https://github.com/DuaneDave/Blog-app.git
-  ```
+```bash
+$ git clone https://github.com/DuaneDave/Blog-app.git
+$ cd blog_app
+```
 
-- Navigate to blog_app folder/directory
+### Commands to run
 
-  ```bash
-  cd blog_app
-  ```
+Run
 
-- On the command line, at the project's root, run `bundle install` to install app dependencies
+```bash
+$ bundle install
+```
 
-## Author 1
+To get all the gems required for the project
+
+Then, run
+
+```bash
+$ npm install
+```
+
+To install packages such as style linters
+
+To check linters locally, use
+
+```bash
+$ rubocop
+$ npx stylelint "**/*.{css,scss}"
+```
+
+Once you have the project correctly set up, run
+
+```bash
+$ bin/rails db:setup
+```
+
+To run all migrations, create the database for testing and for development, and insert some data into the database for you to visualize the changes
+
+Finally, each time you make changes to the project, run
+
+```bash
+$ bundle exec rspec /spec
+```
+
+In the root folder to check the consistency of the app. Please don't make changes to the tests unless completely necessary, and mention it in your PR description.
+
+Important note: Since this project uses TailwindCSS for the styling, you need to run:
+
+```bash
+$ ./bin/dev
+```
+
+For you to see the styling being applied in the browser during development
+
+## Author
 
 👤 **Obiebi David**
 
@@ -38,7 +93,8 @@ Blog app is a website that allows users to create, edit, comment and delete post
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-thanks: [issue-link](https://github.com/DuaneDave/Blog-app/issues)
+
+Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -47,10 +103,11 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
+- LazyCoders
 - Coding Partners
+- Inspiration
 - etc
 
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
