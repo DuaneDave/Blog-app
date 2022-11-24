@@ -7,7 +7,7 @@ RSpec.describe Like, type: :model do
     bio: 'Iam Duane David.',
     post_counter: 0
   )
- 
+
   post = Post.create(
     title: 'Today',
     text: 'Blue sky',
