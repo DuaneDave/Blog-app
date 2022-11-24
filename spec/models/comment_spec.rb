@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
-  user = User.create(
+  person = User.create(
     name: 'Duane',
     photo: 'https://duane.com/me.png',
     bio: 'Iam Duane David.',
@@ -13,10 +13,10 @@ RSpec.describe Comment, type: :model do
     text: 'Blue sky',
     comments_counter: 0,
     likes_counter: 0,
-    user_id: user.id
+    user_id: person.id
   )
 
-  comment = Comment.create(post:, user: user)
+  comment = Comment.create(post:, user: person)
 
   context 'update_comments_counter' do
     comment.update_comments_counter

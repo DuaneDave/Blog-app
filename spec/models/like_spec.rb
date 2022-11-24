@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Like, type: :model do
-  user = User.create(
+  person = User.create(
     name: 'Duane',
     photo: 'https://duane.com/me.png',
     bio: 'Iam Duane David.',
@@ -14,10 +14,10 @@ RSpec.describe Like, type: :model do
     text: 'Blue sky',
     comments_counter: 0,
     likes_counter: 0,
-    user_id: user.id
+    user_id: person.id
   )
 
-  like = Like.create(post:, user: user)
+  like = Like.create(post:, user: person)
 
   context 'update_likes_counter' do
     like.update_likes_counter
