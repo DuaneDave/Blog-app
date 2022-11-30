@@ -1,20 +1,98 @@
 # Blog App
 
-Blog App
 
-# Description the project.
+# 📗 Table of Contents
 
-Blog app is a website that allows users to create, edit, comment and delete posts, keeping data in a database. This project implements both authorization and authentication in order to provide extended functionality to logged in and authorized users.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-## Built With
 
-- Languages:
-  _**Ruby**_
-  _**Postgresql**_
-- Frameworks: _**Ruby On Rails**_
-- Technologies used: _**Visual Studio Code**_
 
-### Requirements
+
+# 📖 Obiebi Okiemute David <a name="about-project"></a>
+
+> Blog app is a website that allows users to create, edit, comment and delete posts, keeping data in a database. This project implements both authorization and authentication in order to provide extended functionality to logged in and authorized users.
+
+
+
+## 🛠 Built With <a name="built-with"></a>
+
+
+
+### Tech Stack <a name="tech-stack"></a>
+
+> Here is a list of technogies used in this project.
+
+<details>
+  <summary>Language</summary>
+  <ul>
+    <li><a href="https://rubylang.org/">Ruby</a></li>
+    <li><a href="https://developer.mozilla.org/">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/">CSS</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Framework</summary>
+  <ul>
+    <li><a href="https://guides.rubyonrails.org/">Ruby on rails</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+
+
+### Key Features <a name="key-features"></a>
+
+- **[Fuilly functional Backend]**
+- **[Dynamic routing]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Coming soon...]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> To get a local copy up and running, follow these steps.
+
+Clone this repository to your desired folder:
+
+```bash
+$ git clone https://github.com/DuaneDave/Blog-app.git
+$ cd blog_app
+```
+
+
+
+### Prerequisites
 
 In order to work on this project, you need to have the following dependencies installed:
 
@@ -24,18 +102,11 @@ In order to work on this project, you need to have the following dependencies in
 - [Yarn](https://yarnpkg.com/)
 - [Rails](https://rubyonrails.org/)
 
-## Getting Started
 
-### Clone this repository
 
-```bash
-$ git clone https://github.com/DuaneDave/Blog-app.git
-$ cd blog_app
-```
+### Install
 
-### Commands to run
-
-Run
+Install this project with:
 
 ```bash
 $ bundle install
@@ -53,34 +124,36 @@ To install packages such as style linters
 
 To check linters locally, use
 
-```bash
+```
+bash
 $ rubocop
 $ npx stylelint "**/*.{css,scss}"
 ```
 
-Once you have the project correctly set up, run
 
-```bash
-$ bin/rails db:setup
+
+### Usage
+
+To run the project, execute the following command:
+
+```
+rails server
 ```
 
-To run all migrations, create the database for testing and for development, and insert some data into the database for you to visualize the changes
 
-Finally, each time you make changes to the project, run
 
-```bash
-$ bundle exec rspec /spec
-```
+### Run tests
 
-In the root folder to check the consistency of the app. Please don't make changes to the tests unless completely necessary, and mention it in your PR description.
+To run tests, run the following command:
+  
+  ```sh
+    rspec ./spec/models
+    rspec ./spec/requests
+  ```
 
-Important note: Since this project uses TailwindCSS for the styling, you need to run:
 
-```bash
-$ ./bin/dev
-```
 
-For you to see the styling being applied in the browser during development
+## 👥 Authors <a name="authors"></a>
 
 ## Author
 
@@ -90,24 +163,54 @@ For you to see the styling being applied in the browser during development
 - Twitter: [@twitterhandle](https://twitter.com/dave_duane)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/david-obiebi/)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Add a blog]**
+- [ ] **[Delete a blog]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐️ if you like this project!
 
-## Acknowledgments
+
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank all those whose code snippets were used in this project.
 
 - Microverse
-- LazyCoders
 - Coding Partners
 - Inspiration
-- etc
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
