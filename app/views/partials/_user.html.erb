@@ -1,9 +1,11 @@
-<div>
-  <div>
-    <img src=<%= user.photo %> alt="Profile picture of <%= user.name%>" />
-  </div>
-  <div>
-    <h3><%= user.name %></h3>
-    <p>Number of Posts: <%= user.post_counter%> </p>
+<div class="user flex">
+  <img src=<%= user.photo %> alt="Profile picture of <%= user.name%>" />
+  <div class="user-stats flex">
+    <h2><%= user.name %></h2>
+    <small>
+      <a href='/users/<%= user.id %>'>
+        Number of Posts: <%= user.post_counter%>
+      </a>
+    </small>
   </div>
 </div>
