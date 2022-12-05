@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe 'renders users Show Page', type: :feature do
   before(:each) do
-    @user = User.create(name: 'King Kong', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'I am a software developerst', post_counter: 9)
+    @user = User.create(name: 'King Kong', photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
+                        bio: 'I am a software developerst', post_counter: 9)
 
     Post.create(user: @user, title: 'lion', text: 'anything on unit tests')
     Post.create(user: @user, title: 'gun', text: 'anything on unit tests')
