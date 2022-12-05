@@ -68,8 +68,8 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'database_cleaner'
   gem 'rspec-rails', '>= 3.9.0'
-  gem "database_cleaner"
 end
 
 group :test do
@@ -79,4 +79,4 @@ group :test do
   gem 'webdrivers'
 end
 
-gem "bullet", "~> 7.0"
+gem 'bullet', '~> 7.0'
