@@ -2,8 +2,10 @@ require 'rails_helper'
 
 RSpec.describe 'Render posts index page', type: :feature do
   before :each do
-    @user = User.create(name: 'Duane David', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'I am a software developer', post_counter: 6)
-    @first_post = Post.create(title: 'Hello', text: 'TI am the greatest', comments_counter: 0, likes_counter: 0, user_id: @user.id)
+    @user = User.create(name: 'Duane David', photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
+                        bio: 'I am a software developer', post_counter: 6)
+    @first_post = Post.create(title: 'Hello', text: 'TI am the greatest', comments_counter: 0, likes_counter: 0,
+                              user_id: @user.id)
     5.times do |_i|
       Comment.create(text: 'Nice post!!', user_id: @user.id, post_id: @first_post.id)
     end
