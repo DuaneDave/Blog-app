@@ -12,4 +12,8 @@ class User < ActiveRecord::Base
   def recent_three_posts
     posts.includes(:comments, :likes).last(3)
   end
+
+  def admin?
+    role == 'admin'
+  end
 end
